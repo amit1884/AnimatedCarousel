@@ -1,0 +1,118 @@
+.carousel-container {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+.active-slide-container {
+  position: relative;
+}
+.active-image {
+  height: 100vh;
+  width: 100%;
+  z-index: 9;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.slide-list-container {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  height: auto;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+.slide-card {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+.slider-card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.slide-card:hover .slider-card-info {
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider-card-info-title,
+.slider-card-info-desc {
+  color: #fff;
+}
+.slider-card-info-title {
+  font-size: 30px;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 70px;
+}
+.slider-card-info-desc {
+  font-size: 25px;
+  font-weight: 550;
+  font-family: "Whisper", cursive;
+}
+.slide-action-btn {
+  display: flex;
+}
+.slide-action-btn .btn {
+  background-color: brown;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+.slide-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 11;
+}
+.slide-info p:nth-child(1) {
+  font-size: 80px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 11;
+  letter-spacing: 10px;
+  margin-bottom: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.slide-info p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 11;
+  word-wrap: break-word;
+  width: 450px;
+  line-height: 50px;
+  font-family: "Whisper", cursive;
+}
+.slide-animation {
+  transform: translate(-320px);
+  transition: 1s;
+}
